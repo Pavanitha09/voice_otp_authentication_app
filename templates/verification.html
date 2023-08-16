@@ -3,11 +3,12 @@
 <head>
     <title>Speaker and Digit Authentication</title>
     <link href="{{url_for('static', filename='/css/verification.css')}}" type="text/css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <div class="container">
         <h1>Speaker and Digit Authentication</h1>
-        <form action="/verification" method="POST" enctype="multipart/form-data">
+        <form id="auth-form" method="POST" enctype="multipart/form-data">
             <div class="form-row">
                 <label class="input-label" for="input_file">Select Audio File:</label>
                 <input type="file" name="input_file" required>
@@ -18,6 +19,33 @@
             </div>
             <input type="submit" value="Authenticate">
         </form>
+
+        <div id="loader" class="loader"></div> 
+        <br/><br/>
+        <div id="result"></div>
     </div>
+
+    <script>
+        $(document).ready(function() {
+            $('#auth-form').submit(function(e) {
+                e.preventDefault();
+
+                // Show loader when form is submitted
+                $('#loader').show();
+
+                $.ajax({
+                    url: '/verification',
+                    type: 'POST',
+                    data: new FormData(this),
+                    processData: false,
+                    contentType: false,
+                    success: function(result) {
+                        $('#loader').hide(); 
+                        $('#result').text(result);
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
