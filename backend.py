@@ -42,7 +42,7 @@ def authentication(input_file, speaker_label):
         text_to_digit[i] = [string[start:start+length] for length in range(2, len(string) + 1) for start in range(len(string) - length + 1)]
 
     ECAPA_TDNN = nemo_asr.models.EncDecSpeakerLabelModel.from_pretrained(model_name='ecapa_tdnn')
-    VAKYANSH = nemo_asr.models.ASRModel.restore_from("English.nemo")
+    VAKYANSH = nemo_asr.models.ASRModel.restore_from("../Conformer_model.nemo")
     # input_file = input("Enter the path to the test file : ")
     # speaker_label = input("Enter the speaker ID : ")
 

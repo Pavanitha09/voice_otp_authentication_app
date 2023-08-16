@@ -15,7 +15,7 @@ def home():
 def start_verification():
     return redirect(url_for('verification'))
 
-@app.route('/verification', methods=['POST'])
+@app.route('/verification', methods=['GET','POST'])
 def verification():
     if request.method == 'POST':
         input_file = request.files['input_file']
