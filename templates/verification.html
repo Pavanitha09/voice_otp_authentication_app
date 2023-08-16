@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Speaker and Digit Authentication</title>
+    <link href="{{url_for('static', filename='/css/verification.css')}}" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Speaker and Digit Authentication</h1>
+        <form action="/verification" method="POST" enctype="multipart/form-data">
+            <div class="form-row">
+                <label class="input-label" for="input_file">Select Audio File:</label>
+                <input type="file" name="input_file" required>
+            </div>
+            <div class="form-row">
+                <label class="input-label" for="speaker_label">Speaker Label:</label>
+                <input type="text" name="speaker_label" required>
+            </div>
+            <input type="submit" value="Authenticate">
+        </form>
+    </div>
+</body>
+</html>

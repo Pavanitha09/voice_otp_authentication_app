@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="{{url_for('static', filename='/css/style.css')}}" type="text/css" rel="stylesheet">  <title>Enrollment and Verification</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Voice OTP Authentication</h1>
+    <h2>Speaker Enrollment and Verification</h2>
+    <div class="button-container">
+      <button class="enroll-button">Click for Enrollment</button>
+      <button class="verify-button" onclick="redirectToVerification()">Click to Verify</button>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('verify-button').addEventListener('click', function() {
+      redirectToVerification();
+    });
+
+    function redirectToVerification() {
+      window.location.href = "{{ url_for('verification') }}";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,523 @@
+/*
+For laptop screens
+*/
+@media only screen and (min-width: 720px)
+{
+	@page{size: landscape;}
+
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		outline: 0;
+		vertical-align: baseline;
+		background: transparent;
+		font-family: "Fira Sans", sans-serif;
+		font-size: 16px;
+	}
+	img{
+		position: relative;
+		max-width: 100%;
+		min-width: 25px;
+		height: auto;
+	}
+	html, body {
+		width: 100%;
+		margin: auto;
+	}
+	body{
+		position: relative;
+		color: rgba(47, 48, 47, 1);
+	}
+	ul li {
+		position: relative;
+		width: 100%;
+		text-align: left;
+	}
+	div {
+		word-wrap: break-word;
+		margin: 3px;
+	}
+	.flex-container {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.title_pane{
+		position: relative;
+		width: 100%;
+		margin: 0 auto 1% auto;;
+		height: 15%;
+		background-color: white;
+	}
+	.nltm_logo{
+		position: relative; 
+		width: 45%;
+	}
+	.ispeakr_logo{
+		position: relative; 
+		width: 15%;
+	}
+	.menu_pane{
+		position: relative;
+		width: 100%;
+		margin: auto;
+		height: 7%;
+		background-color: rgba(216, 235, 240, 1);
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		box-shadow: 0px 0px 5px 5px rgba(216, 235, 240, 1);
+	}
+	.dashboard{
+		position: relative;
+		width: 80%;
+		margin: 30px auto 50px auto;
+		min-height: 65%;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+	.footer{
+		position: relative;
+		width: 100%;
+		margin: auto;
+		height: 20%;
+		text-align: center;
+		justify-content: center;
+		background-color: rgba(65, 99, 68, 1);
+		color: white;
+		font-size: 12px;
+		box-shadow: 0px 0px 5px 5px rgba(65, 99, 68, 1);
+	}
+	.menu_items{
+		position: relative;
+		height: 80%;
+		border-bottom: 5px solid transparent;
+		padding:10px;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		font-weight: 900;
+		color: rgba(47, 48, 47, 1);
+	}
+	.menu_items:hover{
+		border-bottom: 5px solid rgba(28, 18, 222, 1);
+	}
+	.selected_menu{
+		background-color: rgba(28, 18, 222, 1);
+		color: rgba(237, 239, 242, 1);
+		font-weight: 900;
+		border-radius: 3px;
+	}
+	.empty_menu_item{
+		display: flex;
+		height: 35px;
+		width: 75px;
+	}
+	.content_space{
+		position: relative;
+		width: 100%;
+	}
+	.subsection{
+		position: relative;
+		width: 100%;
+		margin: auto;
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-around;
+	}
+	.heading1{
+		font-family: "Yanone Kaffeesatz", sans-serif; /* "DynaPuff", sans-serif; */
+		font-weight: bold;
+		font-size: 35px;
+		padding: 3px 10px 3px 10px;
+		color: gray;
+		display: block;	
+	}
+	.heading1_right{
+		font-family: "Yanone Kaffeesatz", sans-serif;
+		font-weight: bold;
+		font-size: 50px;
+		padding: 3px 10px 3px 10px;
+		color: gray;
+		display: block;
+		text-align: right;
+	}
+	.heading2{
+		font-family: 'Calibri', sans-serif;
+		font-weight: bold;
+		font-size: 20px;
+		padding: 20px 0px 3px 0px;
+		color: gray;
+		display: block;
+		text-align: center;
+	}
+	.hyperlink{
+		cursor: pointer;
+	}
+	.text{
+		position: relative;
+		width: 100%;
+		text-align: justify;
+		text-justify: inter-word;
+		margin: 10px;
+		padding: 10px;
+		border-radius: 5px;
+		background-color: rgba(237, 239, 242, 0.5);
+		border: 1px solid transparent;
+		box-shadow: 5px 5px 5px #BBF;
+		font-weight: 300;
+	}
+	.text:hover{
+		box-shadow: 15px 15px 10px #BBF; 
+	}
+	.display_tablet{
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		width: 200px;
+		height: 100px;
+		word-wrap: break-word;
+		border-radius: 10px;
+		box-shadow: 1px 1px 3px 1px rgba(216, 235, 240, 1);
+		background-color: rgba(216, 235, 240, 1);
+	}
+	.display_tablet:hover{
+		box-shadow: 3px 3px 5px 3px gray;
+		font-weight: 900;
+		color: white;
+		background-color: rgba(38, 81, 145,1);
+	}
+	.logo_pane{
+		position: relative;
+		width: 100%;
+		display: flex; 
+		align-items: center; 
+		justify-content: space-between;
+	}
+	.logo_shadow{
+		border-radius: 5px; 
+		border: 3px solid #EEE;
+		box-shadow: 5px 5px 5px #BBF; 
+		position: relative;
+		max-height: 100%;
+	}
+	.logo_shadow:hover{
+		/*filter: invert(100%);*/
+		box-shadow: 15px 15px 10px #BBF; 
+	}
+	.logo_size{
+		position: relative;
+		width: 12%;
+	}
+	.left_col{
+		position: relative;
+		width: 20%;
+	}
+	.right_col{
+		position: relative;
+		width: 80%;
+	}
+	.accessibility_pane{
+		position: relative;
+		width: 95%;
+		margin: auto;
+		height: auto;
+		background-color: transparent;
+		display: flex;
+		justify-content: flex-end;
+		z-index: 1;
+		border-bottom: 2px solid gray;
+		padding-right: 4%;
+	}
+	.light_mode{
+		position: relative;
+		width: 1vw; 
+		height: 1vw; 
+		background-color: white;
+		border-radius: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		border: 3px solid gray;
+	}
+	.dark_mode{
+		position: relative;
+		width: 1vw; 
+		height: 1vw; 
+		background-color: black;
+		border-radius: 100%;
+		justify-content: space-around;
+		border: 3px solid gray;
+	}
+	.mobile_view{
+		display: none;
+	}
+}
+
+
+/*
+For mobile screens
+*/
+@media only screen and (max-width: 720px)
+{
+	@page{size: portrait;}
+
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		outline: 0;
+		vertical-align: baseline;
+		background: transparent;
+		font-family: "Fira Sans", sans-serif;
+		font-size: 4vw;
+	}
+	img{
+		position: relative;
+		max-width: 100%;
+		min-width: 25px;
+		height: auto;
+	}
+	html, body {
+		position: relative;
+		width: 100vw;
+		margin: auto;
+	}
+	body{
+		color: rgba(47, 48, 47, 1);
+	}
+	ul li {
+		position: relative;
+		width: 100%;
+		margin: auto;
+		text-align: left;
+	}
+	div {
+		word-wrap: break-word;
+		margin: 3px;
+	}
+	.mobile_view{
+		display: block;
+	}
+	.open_menu{
+		position: relative;
+		width: 100%;
+		margin: auto;
+		z-index: 2;
+		background-color: white;
+		color: black;
+		font-size: 6vw;
+	}
+	.title_pane{
+		position: relative;
+		width: 100%;
+		margin: auto;
+		background-color: white;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.nltm_logo{
+		position: relative; 
+		width: 90%;
+		margin: auto;
+	}
+	.ispeakr_logo{
+		position: relative;
+		width: 90%;
+		margin: auto;
+	}
+	.menu_pane{
+		position: relative;
+		width: 100%;
+		margin: auto;
+		background-color: rgba(216, 235, 240, 1);
+		box-shadow: 0px 0px 5px 5px rgba(216, 235, 240, 1);
+		z-index: 1;
+		display: none;
+		padding-bottom: 5%;
+	}
+	.menu_items{
+		position: relative;
+		width: 80%;
+		margin: auto;
+		text-align: left;
+		font-weight: 900;
+		color: rgba(47, 48, 47, 1);
+	}
+	.selected_menu{
+		display: none;
+	}
+	.empty_menu_item{
+	}
+	.dashboard{
+		position: relative;
+		width: 95%;
+		margin: auto;
+		min-height: 65%;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+	.footer{
+		position: relative;
+		width: 100%;
+		margin: auto;
+		height: 20%;
+		text-align: center;
+		justify-content: center;
+		background-color: rgba(65, 99, 68, 1);
+		color: white;
+		font-size: 3vw;
+		box-shadow: 0px 0px 5px 5px rgba(65, 99, 68, 1);
+	}
+	.content_space{
+		position: relative;
+		width: 100%;
+		margin: auto;
+	}
+	.subsection{
+		position: relative;
+		width: 100%;
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		justify-content: flex-start;
+	}
+	.heading1{
+		font-family: "Yanone Kaffeesatz", sans-serif; /* "DynaPuff", sans-serif; */
+		font-weight: bold;
+		font-size: 6vw;
+		padding: 3px 10px 3px 10px;
+		color: gray;
+		display: block;	
+	}
+	.heading1_right{
+		font-family: "Yanone Kaffeesatz", sans-serif;
+		font-weight: bold;
+		font-size: 6vw;
+		padding: 3px 10px 3px 10px;
+		color: gray;
+		display: block;
+		text-align: right;
+	}
+	.heading2{
+		font-family: 'Calibri', sans-serif;
+		font-weight: bold;
+		font-size: 5vw;
+		padding: 20px 0px 3px 0px;
+		color: gray;
+		display: block;
+		text-align: center;
+	}
+	.hyperlink{
+		cursor: pointer;
+	}
+	.text{
+		position: relative;
+		width: 100%;
+		margin: auto;
+		text-align: justify;
+		text-justify: inter-word;
+		margin: 2%;
+		padding: 2%;
+		border-radius: 5px;
+		background-color: rgba(237, 239, 242, 0.5);
+		border: 1px solid transparent;
+		box-shadow: 5px 5px 5px #BBF;
+		font-weight: 300;
+	}
+	.text:hover{
+		box-shadow: 15px 15px 10px #BBF; 
+	}
+	.display_tablet{
+		position: relative;
+		width: 80%;
+		height: 5%;
+		margin: 3% auto 3% auto;;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		word-wrap: break-word;
+		border-radius: 10px;
+		box-shadow: 1px 1px 3px 1px rgba(216, 235, 240, 1);
+		background-color: rgba(216, 235, 240, 1);
+		border: 1px solid black;
+	}
+	.display_tablet:hover{
+		box-shadow: 3px 3px 5px 3px gray;
+		font-weight: 900;
+		color: white;
+		background-color: rgba(38, 81, 145,1);
+	}
+	.logo_pane{
+		position: relative;
+		width: 100%;
+		margin: auto;
+		display: flex; 
+		flex-direction: row;
+		align-items: center; 
+		justify-content: space-between;
+	}
+	.logo_shadow{
+		border-radius: 5px; 
+		border: 3px solid #EEE;
+		box-shadow: 5px 5px 5px #BBF; 
+		position: relative;
+		max-height: 100%;
+	}
+	.logo_shadow:hover{
+		box-shadow: 15px 15px 10px #BBF; 
+	}
+	.logo_size{
+		position: relative;
+		width: 12%;
+		margin: auto;
+	}
+	.left_col{
+		position: relative;
+		width: 20%;
+	}
+	.right_col{
+		position: relative;
+		width: 80%;
+	}
+	.accessibility_pane{
+		position: relative;
+		width: 95%;
+		margin: auto;
+		height: auto;
+		background-color: transparent;
+		display: flex;
+		justify-content: flex-end;
+		z-index: 1;
+		border-bottom: 2px solid gray;
+		padding-right: 4%;
+	}
+	.light_mode{
+		position: relative;
+		width: 2vw; 
+		height: 2vw; 
+		background-color: white;
+		border-radius: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		border: 3px solid gray;
+	}
+	.dark_mode{
+		position: relative;
+		width: 2vw; 
+		height: 2vw; 
+		background-color: black;
+		border-radius: 100%;
+		justify-content: space-around;
+		border: 3px solid gray;
+	}
+}
